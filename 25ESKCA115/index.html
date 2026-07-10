@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRAVAH '26 | SKIT Jaipur Annual Fest</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0F19',
+                            card: '#161B26',
+                            accent: '#8B5CF6',
+                            neonPink: '#EC4899',
+                            neonCyan: '#06B6D4'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0B0F19; }
+        .neon-glow { text-shadow: 0 0 15px rgba(139, 92, 246, 0.6); }
+    </style>
+</head>
+<body class="text-gray-100 min-h-screen selection:bg-purple-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="border-b border-gray-800 bg-brand-dark/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">SKIT JAIPUR</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#events" class="text-sm text-gray-400 hover:text-white transition">Events</a>
+                <a href="#register" class="bg-gradient-to-r from-brand-accent to-brand-neonPink text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition shadow-lg shadow-purple-500/20">Register Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-20 pb-16 lg:pt-28 lg:pb-24">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(139,92,246,0.15),transparent_50%)]"></div>
+        <div class="max-w-4xl mx-auto text-center px-4 relative z-10">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 border border-purple-500/30 text-purple-300 uppercase tracking-widest mb-6">
+                ✨ The Grand Annual Fest
+            </span>
+            <h1 class="text-5xl sm:text-7xl font-extrabold tracking-tight text-white mb-6">
+                PRAVAH <span class="bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent neon-glow">2026</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Ignite your passion at Swami Keshvanand Institute of Technology's ultimate techno-cultural and sports saga. Mark the date.
+            </p>
+
+            <!-- Countdown Timer -->
+            <div class="grid grid-cols-4 gap-3 sm:gap-6 max-w-xl mx-auto mb-12">
+                <div class="bg-brand-card border border-gray-800 p-4 rounded-xl shadow-xl">
+                    <span id="days" class="block text-3xl sm:text-4xl font-extrabold text-white">00</span>
+                    <span class="text-xs text-gray-500 uppercase tracking-wide font-semibold">Days</span>
+                </div>
+                <div class="bg-brand-card border border-gray-800 p-4 rounded-xl shadow-xl">
+                    <span id="hours" class="block text-3xl sm:text-4xl font-extrabold text-white">00</span>
+                    <span class="text-xs text-gray-500 uppercase tracking-wide font-semibold">Hours</span>
+                </div>
+                <div class="bg-brand-card border border-gray-800 p-4 rounded-xl shadow-xl">
+                    <span id="minutes" class="block text-3xl sm:text-4xl font-extrabold text-white">00</span>
+                    <span class="text-xs text-gray-500 uppercase tracking-wide font-semibold">Mins</span>
+                </div>
+                <div class="bg-brand-card border border-gray-800 p-4 rounded-xl shadow-xl">
+                    <span id="seconds" class="block text-3xl sm:text-4xl font-extrabold text-white">00</span>
+                    <span class="text-xs text-gray-500 uppercase tracking-wide font-semibold">Secs</span>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-4">
+                <a href="#register" class="px-8 py-4 bg-gradient-to-r from-brand-accent via-purple-600 to-brand-neonPink text-white font-bold rounded-xl shadow-xl shadow-purple-500/20 hover:scale-[1.02] transition duration-200">
+                    Secure Entry Pass
+                </a>
+                <a href="#events" class="px-8 py-4 bg-gray-900 border border-gray-800 text-gray-300 font-semibold rounded-xl hover:bg-gray-800 transition">
+                    Explore Tracks
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Categories -->
+    <section id="events" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-900">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight text-white">Choose Your Battlefield</h2>
+            <p class="text-gray-400 mt-2">Dozens of events spread across three massive arenas.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Tech Card -->
+            <div class="bg-brand-card border border-gray-800 rounded-2xl p-6 relative group hover:border-purple-500/50 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-xl font-bold mb-4">🖥️</div>
+                <h3 class="text-xl font-bold text-white mb-2">Technical Arena</h3>
+                <p class="text-gray-400 text-sm mb-4">Hackathons, high-stakes Robo-Wars, coding speedruns, and structural design battles.</p>
+                <span class="text-xs text-purple-400 font-semibold bg-purple-500/5 px-2.5 py-1 rounded-md">Cash Prizes up to ₹50k</span>
+            </div>
+            <!-- Cultural Card -->
+            <div class="bg-brand-card border border-gray-800 rounded-2xl p-6 relative group hover:border-pink-500/50 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-xl font-bold mb-4">💃</div>
+                <h3 class="text-xl font-bold text-white mb-2">Cultural & Style</h3>
+                <p class="text-gray-400 text-sm mb-4">Choreography showdowns, street plays, rock band face-offs, and the iconic fashion show runway.</p>
+                <span class="text-xs text-pink-400 font-semibold bg-pink-500/5 px-2.5 py-1 rounded-md">Celebrity Night Access Included</span>
+            </div>
+            <!-- Sports Card -->
+            <div class="bg-brand-card border border-gray-800 rounded-2xl p-6 relative group hover:border-cyan-500/50 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl font-bold mb-4">⚽</div>
+                <h3 class="text-xl font-bold text-white mb-2">Sports & Gaming</h3>
+                <p class="text-gray-400 text-sm mb-4">Fast-paced 7-a-side football, high-energy box cricket tournaments, and competitive esports lanes.</p>
+                <span class="text-xs text-cyan-400 font-semibold bg-cyan-500/5 px-2.5 py-1 rounded-md">Official Trophies & Medals</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-16 max-w-3xl mx-auto px-4 sm:px-6">
+        <div class="bg-brand-card border border-gray-800 rounded-3xl p-8 md:p-10 shadow-2xl relative">
+            <div class="absolute top-0 right-0 transform translate-x-4 -translate-y-4 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl"></div>
+            
+            <!-- Registration Form Element -->
+            <div id="formContainer">
+                <div class="mb-8">
+                    <h2 class="text-3xl font-extrabold text-white tracking-tight">Registration Portal</h2>
+                    <p class="text-gray-400 mt-2 text-sm">Fill in your information accurately to lock in your slot. One event per pass.</p>
+                </div>
+
+                <form id="festForm" class="space-y-6" onsubmit="handleRegistration(event)">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Full Name</label>
+                        <input type="text" id="fullName" required class="w-full bg-brand-dark border border-gray-800 rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 transition" placeholder="John Doe">
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Email Address</label>
+                            <input type="email" id="email" required class="w-full bg-brand-dark border border-gray-800 rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 transition" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">College Name</label>
+                            <input type="text" id="college" required class="w-full bg-brand-dark border border-gray-800 rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 transition" placeholder="SKIT Jaipur">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Event Track Category</label>
+                            <select id="category" onchange="updateEvents()" required class="w-full bg-brand-dark border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-purple-500 transition">
+                                <option value="" disabled selected>Select Category</option>
+                                <option value="technical">Technical Arena</option>
+                                <option value="cultural">Cultural & Style</option>
+                                <option value="sports">Sports & Gaming</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Specific Flagship Event</label>
+                            <select id="eventSelect" disabled required class="w-full bg-brand-dark border border-gray-800 rounded-xl px-4 py-3.5 text-white disabled:opacity-50 focus:outline-none focus:border-purple-500 transition">
+                                <option value="" disabled selected>Choose category first</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 mt-4 bg-gradient-to-r from-brand-accent to-brand-neonPink text-white font-bold rounded-xl shadow-lg shadow-purple-500/20 hover:opacity-95 transition tracking-wide text-sm uppercase">
+                        Generate Digital Pass
+                    </button>
+                </form>
+            </div>
+
+            <!-- Success Ticket Container (Initially Hidden) -->
+            <div id="ticketContainer" class="hidden text-center py-6">
+                <div class="w-16 h-16 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">✓</div>
+                <h2 class="text-3xl font-extrabold text-white mb-2">Registration Confirmed!</h2>
+                <p class="text-gray-400 text-sm max-w-md mx-auto mb-8">Your event slot has been verified. Show this generated pass token at the SKIT main campus gate on August 10.</p>
+                
+                <!-- Ticket Object Graphic -->
+                <div class="bg-brand-dark border border-dashed border-gray-800 rounded-2xl p-6 text-left max-w-md mx-auto relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-purple-500/10 text-purple-300 text-[10px] font-mono tracking-widest px-3 py-1 rounded-bl-xl border-l border-b border-gray-800 uppercase">Entry Pass</div>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="block text-[10px] font-bold text-gray-500 uppercase tracking-wider">Attendee</span>
+                            <span id="ticketName" class="text-lg font-bold text-white">John Doe</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <span class="block text-[10px] font-bold text-gray-500 uppercase tracking-wider">Event Track</span>
+                                <span id="ticketCategory" class="text-sm font-semibold text-gray-300">Technical</span>
+                            </div>
+                            <div>
+                                <span class="block text-[10px] font-bold text-gray-500 uppercase tracking-wider">Specific Event</span>
+                                <span id="ticketEvent" class="text-sm font-semibold text-gray-300">Hackathon</span>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-gray-900 grid grid-cols-2 gap-4 items-center">
+                            <div>
+                                <span class="block text-[10px] font-bold text-gray-500 uppercase tracking-wider">Pass ID</span>
+                                <span id="ticketId" class="text-sm font-mono text-purple-400 font-bold">#PRV-849201</span>
+                            </div>
+                            <div>
+                                <span class="block text-[10px] font-bold text-gray-500 uppercase tracking-wider">Date & Venue</span>
+                                <span class="text-xs font-semibold text-gray-400">Aug 10, 2026 @ SKIT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="resetForm()" class="mt-8 text-sm text-gray-500 hover:text-white transition underline underline-offset-4">Register Another Member</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-900 bg-black/40 py-8 text-center text-xs text-gray-600">
+        <p>&copy; 2026 Swami Keshvanand Institute of Technology, Management & Gramothan, Jaipur. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Core Interactive JavaScript Logic -->
+    <script>
+        // Dictionary containing events mapped directly to major categories
+        const eventData = {
+            technical: ["Mega Hackathon '26", "Robo-War Championship", "Speed Bug Hunting"],
+            cultural: ["Thirak Solo/Group Dance", "Sur Western & Classical Vocal", "Street Play Showdown"],
+            sports: ["7-a-side Football Shield", "Box Cricket Premier League", "LAN Gaming (Valorant/BGMI)"]
+        };
+
+        // Function updates the second dropdown select menu based on selected category choice
+        function updateEvents() {
+            const categorySelect = document.getElementById('category');
+            const eventSelect = document.getElementById('eventSelect');
+            const selectedCategory = categorySelect.value;
+
+            eventSelect.innerHTML = ''; // Wipe existing configurations safely
+            
+            if (eventData[selectedCategory]) {
+                eventSelect.disabled = false;
+                eventData[selectedCategory].forEach(event => {
+                    const option = document.createElement('option');
+                    option.value = event.toLowerCase().replace(/\s+/g, '-');
+                    option.textContent = event;
+                    eventSelect.appendChild(option);
+                });
+            } else {
+                eventSelect.disabled = true;
+                const defaultOpt = document.createElement('option');
+                defaultOpt.textContent = "Choose category first";
+                eventSelect.appendChild(defaultOpt);
+            }
+        }
+
+        // Processing form inputs, switching containers, and mapping custom ticket objects
+        function handleRegistration(e) {
+            e.preventDefault();
+            
+            // Extract raw data strings
+            const name = document.getElementById('fullName').value;
+            const catSelect = document.getElementById('category');
+            const categoryText = catSelect.options[catSelect.selectedIndex].text;
+            const evSelect = document.getElementById('eventSelect');
+            const eventText = evSelect.options[evSelect.selectedIndex].text;
+            
+            // Populate Target Pass Text Fields
+            document.getElementById('ticketName').textContent = name;
+            document.getElementById('ticketCategory').textContent = categoryText;
+            document.getElementById('ticketEvent').textContent = eventText;
+            document.getElementById('ticketId').textContent = '#PRV-' + Math.floor(100000 + Math.random() * 900000);
+
+            // Interface layout structural toggle
+            document.getElementById('formContainer').classList.add('hidden');
+            document.getElementById('ticketContainer').classList.remove('hidden');
+        }
+
+        // Resets operational states back to default layouts
+        function resetForm() {
+            document.getElementById('festForm').reset();
+            document.getElementById('eventSelect').disabled = true;
+            document.getElementById('eventSelect').innerHTML = '<option value="" disabled selected>Choose category first</option>';
+            document.getElementById('ticketContainer').classList.add('hidden');
+            document.getElementById('formContainer').classList.remove('hidden');
+        }
+
+        // Live Countdown Clock script target dynamic date: August 10, 2026
+        const targetDate = new Date("August 10, 2026 09:00:00").getTime();
+
+        const timerInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days < 10 ? "0" + days : days;
+            document.getElementById("hours").textContent = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").textContent = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").textContent = seconds < 10 ? "0" + seconds : seconds;
+
+            if (difference < 0) {
+                clearInterval(timerInterval);
+                document.getElementById("days").textContent = "00";
+                document.getElementById("hours").textContent = "00";
+                document.getElementById("minutes").textContent = "00";
+                document.getElementById("seconds").textContent = "00";
+            }
+        }, 1000);
+    </script>
+</body>
+</html><index4 class="ht"></index4>
