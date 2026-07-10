@@ -1,104 +1,36 @@
-/* 1. Global Reset & Body Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#hello {
-    background: linear-gradient(135deg, black);
-    min-height: 100vh;
+.container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+.box{
+    flex: 5;
+    min-width: 300px;
+    height: 200px;
+    background:yellow;
+    color: black;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-sizing: border-box;
+    object-fit: cover;
 }
-
-/* 2. Heading Style */
-#hell {
-    color: whitesmoke;
-    font-size: 24px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    text-align: center;
+#potential{
+    width: 250px;
+    height: 200px;
 }
-
-/* 3. The Form Card (your .background class) */
-.background {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    width: 100%;
-    max-width: 450px;
+#right{
+    width: 250px;
+    height: 200px;
 }
-
-/* 4. Text, Email, Phone, Date, and Password Inputs */
-.background input[type="text"],
-.background input[type="email"],
-.background input[type="password"],
-.background input[type="date"] {
-    width: 100%;
-    padding: 10px 14px;
-    margin-top: 6px;
-    border: 1.5px solid #dcdcdc;
-    border-radius: 6px;
-    font-size: 15px;
-    color: #333;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-/* Focus effects for cleaner UX */
-.background input:focus {
-    border-color: #4a90e2;
-    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
-}
-
-/* 5. Labels Styling */
-.background label {
-    display: block;
-    font-size: 13px;
-    font-weight: 600;
-    color: blueviolet;
-    margin-top: 10px;
-}
-
-/* 6. Overriding styles for Radio Buttons & Inline Elements */
-/* This makes sure Gender & DOB fields line up nicely instead of breaking lines awkwardly */
-.background input[type="radio"] {
-    margin-right: 4px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.background input[type="radio"] + label {
-    display: inline-block;
-    margin-right: 15px;
-    margin-top: 0;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-/* Inline styling specific to the Date picker layout */
-#dtOOB {
-    display: inline-block;
-    width: auto;
-    margin-left: 10px;
-    padding: 6px 10px;
-}
-
-.background label[for="dtOOB"] {
-    display: inline-block;
-    margin-top: 15px;
-}
-
-/* 7. Submit Button Styling */
-button {
-    width: 100%;
-    max-width: 450px; 
-    color:brown;
-    background-color: red;
+#girl{
+    width: 300px;
+    height: 200px;
 }
