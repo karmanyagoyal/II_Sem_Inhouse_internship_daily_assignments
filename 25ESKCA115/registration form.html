@@ -8,20 +8,32 @@
 </head>
 <body id="hello">
     <h1 id="hell">REGISTRATION FORM</h1>
-    <form class="background">
+    <form class="background"  action="registration.php" method="post" enctype="multipart/form-data">
+        
+        <input type="file" name="myfile" accept="image/*" required>
+
         <label>
-          NAME:
-        <input type="text" id="txtName" required placeholder="Enter your name"/>
+    NAME:
+        <input type="text"  name="full Name" id="txtName" required placeholder="Enter your name"/>
             <br><br>
             </label>
             <label>
+
+    BRANCH:
+        <br>
+          <input type="text" name="branch" id="txtBranch" required placeholder="Enter your branch"> 
+          <br><br>
+            </label> 
+
+        <label>
     EMAIL:
-         <input type="email" id="txtEmail" required placeholder="Enter  your email"/>   
+    <br>
+         <input type="email"  name="email "id="txtEmail" required placeholder="Enter  your email"/>   
         </label>
         <br><br>
-        <label>
-            PHONE NUMBER:
-            <input type="text" id="txtNumber" required placeholder="Enter the phone number"/>
+    </label>
+             PHONE NUMBER:
+            <input type="text"  name="phonenumber "id="txtNumber" required placeholder="Enter the phonenumber"/>
         </label>
         <br><br>
          GENDER:
@@ -45,7 +57,14 @@
            
            <br>
 
-    <button>
+           <label>
+
+            SKILLS:
+              <br><br>
+            <input type="checkbox" value="region" name="INDIA">
+           </label>
+
+    <button type="submit">
         SUBMIT
     </button>
 
